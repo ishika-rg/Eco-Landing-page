@@ -1,0 +1,64 @@
+.container{
+    background-color: black;
+    display : flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    color: white;
+
+
+   
+
+
+}
+.mainLogo {
+    height : 100px;
+    color: white;
+    display: flex;
+    
+}
+
+.mainLogo img{
+    height : 100%;
+}
+.logoName{
+    padding-top: 25px;
+    padding-left: 20px;
+}
+.links{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+.links a:hover{
+    color: red;
+    
+}
+.links a::after{
+    /* color: white; */
+    /* text-decoration: none; */
+    /* padding: 0 20px; */
+
+    height: 2px;
+    position: absolute;
+    content: '';
+  width: 100%;
+  transform: scaleX(0);
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+
+}
+.links a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

@@ -1,0 +1,98 @@
+
+.hero_section {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px) !important;
+  
+}
+
+.hero_section::before {
+  background-image: url("../../images/bg2.webp");
+  background-repeat: "no-repeat";
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* background-color: rgba(0,0,0,0.25); */
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+}
+
+.heading {
+  position: relative;
+}
+.earth {
+  height: 400px;
+  width: 500px;
+}
+
+/* filter: grayscale(60%); */
+
+.loader {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 10rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  float: left;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  /* box-shadow: 0 0 5px 5px #000 inset, 0 0 5px 2px #000; */
+  box-shadow: rgb(38, 57, 77) 10px 50px 40px -10px;
+/* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;   */
+background: url("../../images/Blue_Marble_2002.png");
+  background-size: cover;
+  /* animation: spin 30s linear alternate infinite; */
+
+  animation-name: rotate;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.load {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  overflow: hidden;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--LightModeText);
+}
+
+@keyframes rotate {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: 360px;
+  }
+}
+
+
+.text{
+
+    
+    position: absolute;
+    
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(5, 51, 5);
+    top: 20rem;
+    margin: 0 auto;
+    left : 25rem;
+
+}
+.tag{
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+}
